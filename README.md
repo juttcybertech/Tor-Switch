@@ -99,6 +99,6 @@ Tested and confirmed stable on the following distributions:
 ---
 
 <p align="center">
-  <b>Developed with ❤️ by JuttCyberTech</b><br>
+  <b>Developed with ❤️ by Jutt Cyber Tech</b><br>
   <i>Empowering privacy through open-source innovation.</i>
 </p>
