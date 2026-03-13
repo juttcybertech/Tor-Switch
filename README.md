@@ -1,84 +1,74 @@
-# 🔒 Tor Switch
+# 🛡️ Tor-Switch
 
-> **A secure, transparent Tor routing tool with a built-in kill switch, leak protection, and real-time monitoring.  
-No third-party anonymization frameworks required.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Tor_Project-7D4698?style=for-the-badge&logo=tor-project&logoColor=white" alt="Tor" />
+  <img src="https://img.shields.io/badge/Security-Shield-00b4d8?style=for-the-badge" alt="Security" />
+</p>
 
-![Switch To Tor Screenshot](screenshort/pic.png)  
-*A modern terminal-based Tor anonymization utility for Linux systems.*
-
----
-
-## ✨ Features
-
-- **Full System Tor Routing**  
-  All traffic is transparently routed through Tor without manual browser configuration.
-
-- **Kill Switch**  
-  Automatically blocks all traffic if Tor disconnects to prevent deanonymization.
-
-- **IPv4 and IPv6 Leak Protection**
-
-- **DNS Leak Protection**
-
-- **Real-Time IP Rotation Dashboard**  
-  Monitor your current exit IP, country, and Tor circuit status live.
-
-- **Leak Detection and Validation**
-
-- **No Dependency on Anonsurf or Third-Party Tools**
-
-- **Beautiful TUI**  
-  Built using Rich for a clean, interactive interface.
+> **A professional-grade, transparent Tor routing utility. Features a hard-coded Kill Switch, DNS leak protection, and real-time circuit monitoring without relying on third-party scripts.**
 
 ---
 
-## ⚠️ Requirements
-
-- Linux OS  
-  Recommended: Debian, Ubuntu, Kali, Parrot OS
-
-- Python 3.8 or newer
-
-- Root access (sudo)
-
-- Required packages:  
-  tor, iptables, iproute2
+## 📸 Preview
+![Switch To Tor Screenshot](screenshort/pic.png)
+*Modern TUI (Terminal User Interface) built for clarity and speed.*
 
 ---
 
-## 📦 Installation
+## ✨ Key Features
 
-Install system dependencies:
+* **🌐 Full System Tunneling** – Automatically routes all TCP traffic through the Tor network.
+* **🚫 Fail-Safe Kill Switch** – Prevents "Clear-Net" data leaks by dropping all traffic if the Tor service fails.
+* **🛡️ Multi-Layer Leak Protection** – Hardened rules to block **IPv4**, **IPv6**, and **DNS** deanonymization attempts.
+* **📊 Live Status Dashboard** – Monitor your active Exit IP, Country, and Tor Relay status in real-time.
+* **⚡ Native Implementation** – Direct integration with `iptables` and `stem`; no need for Anonsurf.
 
+---
+
+## 🛠️ System Requirements
+
+| Component | Requirement |
+| :--- | :--- |
+| **Operating System** | 🐧 Linux (Debian, Ubuntu, Kali, Parrot OS) |
+| **Language** | 🐍 Python 3.8+ |
+| **Permissions** | 🔑 Root / Sudo (Required for network routing) |
+| **Dependencies** | `tor`, `iptables`, `iproute2` |
+
+---
+
+## 🚀 Installation & Usage
+
+Follow these steps to set up **Tor-Switch** on your machine:
+
+### 1. Update & Install Core Dependencies
 ```bash
-sudo apt update
-sudo apt install -y tor iptables python3 python3-pip
-```
-Install Python dependencies:
+sudo apt update && sudo apt install -y tor iptables python3 python3-pip
 ```bash
 pip3 install requests stem rich
-```
-
-Clone the repository:
-```bash
-git clone https://github.com/juttcybertech/Tor-Switch.git
+Bash
+git clone [https://github.com/juttcybertech/Tor-Switch.git](https://github.com/juttcybertech/Tor-Switch.git)
 cd Tor-Switch
-```
-
-▶️ Usage
-
-Run the tool with root privileges:
-```bash
+Bash
 sudo python3 switch_to_tor.py
-```
+🧪 Verified Environments
+Tested and confirmed stable on the following distributions:
 
-Tested and confirmed working on:
+Parrot Security
 
-* Parrot OS
-* Kali Linux
-* Ubuntu and Debian
+Kali Linux
 
-🛡️ Disclaimer
+Ubuntu / Debian
 
-This tool is created strictly for privacy, research, and educational purposes.
-Misuse for illegal activity is prohibited.
+⚖️ Legal Disclaimer
+[!WARNING]
+
+This tool is developed for educational and privacy research purposes only. The developers are not responsible for any misuse or illegal activities conducted with this software. Always ensure you are in compliance with your local regulations.
+
+<p align="center">
+<b>Developed by JuttCyberTech</b>
+
+
+<i>Securing your footprint, one hop at a time.</i>
+</p>
